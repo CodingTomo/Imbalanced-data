@@ -2,3 +2,14 @@
 data/creditcard.csv
 log/.DS_Store
 plots/.DS_Store
+.idea/dictionaries/tomasotrinci.xml
+.idea/Imbalanced-data.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/rSettings.xml
+__pycache__/config.cpython-37.pyc
+__pycache__/data_exploration.cpython-37.pyc
+__pycache__/supervised.cpython-37.pyc
+__pycache__/unsupervised.cpython-37.pyc
+__pycache__/utilities.cpython-37.pyc
