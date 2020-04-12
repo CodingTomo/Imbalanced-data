@@ -14,3 +14,4 @@ __pycache__/supervised.cpython-37.pyc
 __pycache__/unsupervised.cpython-37.pyc
 __pycache__/utilities.cpython-37.pyc
 .idea/workspace.xml
+.DS_Store
