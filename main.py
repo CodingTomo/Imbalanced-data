@@ -57,4 +57,3 @@ starting_data = shuffle(starting_data).reset_index(drop=True)
 # Unsupervised - anomaly detection
 y, ifo_pred, ae_pred, lof_pred = unsupervised.anomaly_detection(starting_data, params.label)
 result_unsupervised_methods = utilities.manage_unsupervised_result(y, ifo_pred, ae_pred, lof_pred)
-

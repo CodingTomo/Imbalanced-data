@@ -71,6 +71,3 @@ def plot_outlier_scores(y_true, scores, title='', **kdeplot_options):
     plt.clf()
 
     return
-
-
-

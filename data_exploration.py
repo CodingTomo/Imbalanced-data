@@ -37,15 +37,3 @@ def linear_correlation(data):
     plt.savefig("plots/covariance_matrix.png")
     plt.clf()
     print('Linear dependence between 0/1 labels and the other variables:\n ', corrMatrix['Class'])
-
-
-
-
-
-
-
-
-
-
-
-
