@@ -13,3 +13,4 @@ __pycache__/data_exploration.cpython-37.pyc
 __pycache__/supervised.cpython-37.pyc
 __pycache__/unsupervised.cpython-37.pyc
 __pycache__/utilities.cpython-37.pyc
+.idea/workspace.xml
