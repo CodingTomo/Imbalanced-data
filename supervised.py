@@ -16,6 +16,7 @@ from sklearn.preprocessing import StandardScaler
 import scikitplot as skplt
 import matplotlib.pyplot as plt
 from xgboost import plot_importance
+from sklearn.metrics import plot_confusion_matrix
 
 # other
 import pandas as pd
@@ -175,6 +176,10 @@ def best_model(data, best, label, threshold):
     plt.savefig("plots/best_supervised_model_roc_curve.png")
     plt.clf()
 
+    plot_confusion_matrix(model, X_test, y_test, values_format=str)
+    plt.savefig("plots/confusion_matrix.png")
+    plt.clf()
+
     if best['classifier'].loc[0] == 'rf':
         feat_importance = pd.Series(model.feature_importances_, index=X.columns)
         feat_importance.nlargest(10).plot(kind='hist')
@@ -188,7 +193,5 @@ def best_model(data, best, label, threshold):
 
     else:
         print('Model not found!')
-
-    print('fine')
 
     return model_metric, model_class_metric, cm
