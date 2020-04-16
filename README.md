@@ -17,7 +17,7 @@ Ogni transazione è innazitutto etichettata come regolare (**0**) oppure come fr
 
 Ogni transazione è poi descritta da una variabile *Time* (in secondi) che rappresenta l'intervallo temporale intercorso fra essa e la prima transazione del dataset, dall'importo scambiato o *Amount*  e da altre 29 variabili numeriche che per questione di privacy sono state opportunamente anonimizzate e trasformate tramite PCA. 
 
-Il dataset e ulteriori informazioni posso essere trovati al seguente link: [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)
+Il dataset e ulteriori informazioni posso essere trovati al seguente link: [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 
 ## Analisi descrittiva
 
@@ -76,9 +76,9 @@ Premettiamo che il dataset è stato sottocampionato perché l'addestramento di q
 
 Sono stati addrestrati tre modelli che si basano su logiche differenti.
 
-1. Isolation Forest: ensamble
-2. Autoencoder: rete neurale.
-3. Local Outlier Factor: densità.
+1. Isolation Forest: ensamble;
+2. Autoencoder: rete neurale;
+3. Local Outlier Factor: modello metrico.
 
 Scegliere modelli che seguono varie logiche per il rilevamento di anomalie è utile perché ci permette di apprezzare il fenomeno da punti di vista leggermente diversi e in fase di output prenderemo in considerazione tutte le logiche applicate.
 
