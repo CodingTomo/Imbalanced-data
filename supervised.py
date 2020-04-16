@@ -176,7 +176,7 @@ def best_model(data, best, label, threshold):
     plt.savefig("plots/best_supervised_model_roc_curve.png")
     plt.clf()
 
-    plot_confusion_matrix(model, X_test, y_test, values_format=str)
+    plot_confusion_matrix(model, X_test, y_test)
     plt.savefig("plots/confusion_matrix.png")
     plt.clf()
 
