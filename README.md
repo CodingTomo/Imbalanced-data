@@ -48,13 +48,17 @@ Queste informazioni possono essere consultate nei rispettivi grafici all'interno
 
 Le performace ottenute dal modello migliore, quasi sempre xgboost, si attestano mediamente intorno ad un valore di ROC-AUC di 0.93.
 
-### Risultati e valore di business
+### Discussione dei risultati e valore di business
 
 Analizziamo i risultati ottenuti in fase di test dal modello migliore. 
 
 Il dataset di test conteneva 85.127 transazioni, di cui 158 frodi. Il modello è stato capace di individuare correttamente 134 frodi (84%) segnalando allo stesso tempo 345 falsi positivi.
 
 Da questi dati emerge come gli agenti incaricati dell'analisi del transanto dovranno processare ora solo 479 transazioni anzichè 85.127 e cioè lo 0,006% dei casi. In questa piccola percentuale mediamente saranno contenute l'84% delle frodi totali con un tasso di una frode ogni quattro transazioni analizzate (il tasso precedente era una ogni duemila).
+
+Infine consideriamo il grafico relativo all'importanza delle variabili nel processo decisionale. Questa visualizzazione restituisce soltanto un elenco ordinato di *feature* e dà nessuna informazione di tipo qualitativo. Tale informazione però può essere recuperata sfuttando il lavoro fatto durante l'analisi descrittiva. Per esempio la distribuzione della variabile **V4**, che il modello individua essere quella più importante per discernere fra le due classi, suggerisce che nel sottoinsieme delle frodi (istogramma rosso nell'immagine) il valore della variabile stessa è mediamente più alto rispetto a quello dell'insieme delle transazioni regolari (in blu).
+
+Questo tipo di indicazione è particolarmente utile quando il numero di predittori  è molto grande e sopratutto quando le variabili considerate sono parlanti e possono effettivamente dare un indicazione concreta.
 
 
 
@@ -84,7 +88,7 @@ Nella cartella *plots*, per ogni modello, sono riportati i valori di anomalia as
 
 Sfruttando le etichette solo in un secondo momento, dopo la fase di training, possiamo dare una stima delle prestazioni e analizzare i risultati ottenuti. Le performace ottenute dal modello migliore, quasi sempre l'autoencoder, si attestano mediamente intorno ad un valore di ROC-AUC di 0.84.
 
-### Risultati e valore di business
+### Discussione dei risultati e valore di business
 
 Analizziamo i risultati ottenuti dall'unione dei tre modelli.
 
