@@ -1,5 +1,5 @@
 # Imbalanced-data
- A financial fraud use case. Work in progress!
+ Caso di studio: frodi.
 
 ## Introduzione
 
