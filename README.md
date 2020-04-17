@@ -17,11 +17,11 @@ Ogni transazione è innazitutto etichettata come regolare (**0**) oppure come fr
 
 Ogni transazione è poi descritta da una variabile *Time* (in secondi) che rappresenta l'intervallo temporale intercorso fra essa e la prima transazione del dataset, dall'importo scambiato o *Amount*  e da altre 29 variabili numeriche che per questione di privacy sono state opportunamente anonimizzate e trasformate tramite PCA. 
 
-Il dataset e ulteriori informazioni posso essere trovati al seguente link: [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+Il dataset e ulteriori informazioni possono essere trovati al seguente link: [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 
 ## Analisi descrittiva
 
-In questa fase sono state fatte delle valutazioni di carattere generale sulle variabili che vanno a comporre il dataset. In particolare sono state confrontate per le due classi le distrubioni dei valori di ogni singolo descrittore. Il risultato è visualizzabile con l'aiuto dei grafici *var_dist_xxx.png* della cartella *plots*. E' stato inoltre verificato che le variabili hanno subito effetivamente una trasformazione PCA verificando la completa scorrelazione tramite la matrice di covarianza di cui sono riportati i valori in  *covariance_matrix.png*, sempre all'interno della cartella *plots*.
+In questa fase sono state fatte delle valutazioni di carattere generale sulle variabili che vanno a comporre il dataset. In particolare sono state confrontate per le due classi le distribuzioni dei valori di ogni singolo descrittore. Il risultato è visualizzabile con l'aiuto dei grafici *var_dist_xxx.png* della cartella *plots*. E' stato inoltre verificato che le variabili hanno subito effetivamente una trasformazione PCA verificando la completa scorrelazione tramite la matrice di covarianza di cui sono riportati i valori in  *covariance_matrix.png*, sempre all'interno della cartella *plots*.
 
 Non sono stati fatti ragionamenti qualitativi su questi risultati a causa dell'anonimizzazione dei descrittori che ha come conseguenza la perdita di significato nel contesto reale. Tuttavia a valle della classificazione potranno fornire alcune utili indicazioni.
 
