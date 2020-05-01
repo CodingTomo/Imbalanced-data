@@ -24,6 +24,13 @@ class Params:
         self.label = "Class"
         self.decision_metric = "mean_test_roc_auc_score"
         self.decision_threshold = 0.8
+        self.torch_input_dim = 30
+        self.torch_hidden_dim = [25, 20, 15, 20, 25]
+        self.torch_output_dim = 30
+        self.torch_epochs = 20
+        self.torch_lr = 0.001
+        self.torch_batch = 256*2
+        self.torch_id = 5
 
 
 class Logger(object):

@@ -5,10 +5,12 @@ from sklearn.utils import shuffle
 
 # custom modules
 import config
+
 import data_exploration
 import utilities
 import supervised
 import unsupervised
+import personalized_autoencoder
 
 
 # workspace
@@ -57,3 +59,8 @@ starting_data = shuffle(starting_data).reset_index(drop=True)
 # Unsupervised - anomaly detection
 y, ifo_pred, ae_pred, lof_pred = unsupervised.anomaly_detection(starting_data, params.label)
 result_unsupervised_methods = utilities.manage_unsupervised_result(y, ifo_pred, ae_pred, lof_pred)
+
+# Personalized autoencoder
+report = personalized_autoencoder.personalized_autoencoder(starting_data, params)
+
+
