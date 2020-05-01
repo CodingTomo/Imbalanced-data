@@ -102,9 +102,9 @@ Il non utilizzare le etichette non è necessariamente un spreco di informazione 
 
 ### Appendice: autoencoder personalizzato
 
-A scopo di esercizio è stata realizzata una variante dell'autoendoer in PyTorch senza sfruttare il pacchetto PyOD. 
+A scopo di esercizio è stata realizzata una variante dell'autoencoder in PyTorch senza sfruttare il pacchetto PyOD che si appoggia invece a Keras. 
 
-Sebbene più flessibile, la struttura della rete è molto simile a quella usata in precedenza e raggiunge risultati analoghi. Infatti, mantenendo lo stesso numero di *alert*, ottiene una copertura dell'83% delle frodi.
+Sebbene più flessibile, la struttura della rete personalizzata è molto simile a quella usata in precedenza e raggiunge risultati analoghi. Infatti, mantenendo lo stesso numero di *alert*, ottiene una copertura dell'83% delle frodi.
 
 Parallamente all'addestramento e alla validazione viene costruita una rudimentale dashboard sfuttando Tensorboard. Da questo front-end possono essere esplorate le scelte architetturali legate alla rete e e gli iperparametri impostati. E' inoltre possibile visualizzare più *run* insieme in modo da ottenere un confronto immediato delle performance dei vari modelli in funzione della struttura e dei parametri.
 
