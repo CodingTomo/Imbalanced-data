@@ -54,7 +54,7 @@ Analizziamo i risultati ottenuti in fase di test dal modello migliore.
 
 Il dataset di test conteneva 85.127 transazioni, di cui 158 frodi. Il modello è stato capace di individuare correttamente 134 frodi (84%) segnalando allo stesso tempo 345 falsi positivi.
 
-Da questi dati emerge come gli agenti incaricati dell'analisi del transanto dovranno processare ora solo 479 transazioni anzichè 85.127 e cioè lo 0,006% dei casi. In questa piccola percentuale mediamente saranno contenute l'84% delle frodi totali con un tasso di una frode ogni quattro transazioni analizzate (il tasso precedente era una ogni duemila).
+Da questi dati emerge come gli agenti incaricati dell'analisi del transanto dovranno processare ora solo 479 transazioni anzichè 85.127 e cioè lo 0,6% dei casi. In questa piccola percentuale mediamente saranno contenute l'84% delle frodi totali con un tasso di una frode ogni quattro transazioni analizzate (il tasso precedente era una ogni duemila).
 
 Infine consideriamo il grafico relativo all'importanza delle variabili nel processo decisionale. Questa visualizzazione restituisce soltanto un elenco ordinato di *feature* e dà nessuna informazione di tipo qualitativo. Tale informazione però può essere recuperata sfuttando il lavoro fatto durante l'analisi descrittiva. Per esempio la distribuzione della variabile **V4**, che il modello individua essere quella più importante per discernere fra le due classi, suggerisce che nel sottoinsieme delle frodi (istogramma rosso nell'immagine) il valore della variabile stessa è mediamente più alto rispetto a quello dell'insieme delle transazioni regolari (in blu).
 
@@ -94,7 +94,7 @@ Analizziamo i risultati ottenuti dall'unione dei tre modelli.
 
 Il dataset campionato conteneva 51.070 transazioni, di cui 103 frodi. Il modello è stato capace di individuare correttamente 88 frodi (85%) segnalando allo stesso tempo 845 falsi positivi.
 
-Da questi dati emerge come gli agenti incaricati dell'analisi del transanto dovranno processare ora solo 942 transazioni anzichè 51.070 e cioè lo 0,02% dei casi. In questa percentuale mediamente saranno contenute l'85% delle frodi totali con un tasso di una frode ogni dieci transazioni analizzate (il tasso precedente era una ogni duemila).
+Da questi dati emerge come gli agenti incaricati dell'analisi del transanto dovranno processare ora solo 942 transazioni anzichè 51.070 e cioè lo 1,8% dei casi. In questa percentuale mediamente saranno contenute l'85% delle frodi totali con un tasso di una frode ogni dieci transazioni analizzate (il tasso precedente era una ogni duemila).
 
 Se confrontato con il modello supervisionato, le prestazioni ottenute da questo approccio sono leggermente inferiori, ma ricordiamoci che gli algoritmi non supervisionati non utilizzano le etichette in fase di training!
 
